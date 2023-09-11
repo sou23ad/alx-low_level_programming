@@ -8,18 +8,17 @@
 
 int main(void)
 {
-	int lowerCase = 'a';
-	int upperCase = 'A';
-	while (lowerCase <= 'z')
-	{
-		putchar(lowerCase);
-		lowerCase += 1;
-	}
-	while (upperCase <= 'Z')
-	{
-		putchar(upperCase);
-		upperCase += 1;
-	}
-	putchar('\n');
-	return (0);
+        char lowerCase, upperCase;
+
+        for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++) {
+                putchar(lowerCase);
+        }
+
+        for (upperCase = 'A'; upperCase <= 'Z'; upperCase++) {
+                putchar(upperCase);
+        }
+
+        putchar('\n');
+        return (0);
 }
+
