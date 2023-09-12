@@ -1,25 +1,23 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
  * Return: Always 0 (success)
  */
-#include <stdio.h>
-
 int main(void)
 {
-        int i;
-
-        for (i = 'a'; i <= 'z'; i++) {
-                putchar(i);
+        int lowerCase = 'a';
+        int upperCase = 'A';
+        while (lowerCase <= 'z')
+        {
+                putchar(lowerCase);
+                lowerCase += 1;
         }
-
-        for (i = 'A'; i <= 'Z'; i++) {
-                putchar(i);
+        while (upperCase <= 'Z')
+        {
+                putchar(upperCase);
+                upperCase += 1;
         }
-
         putchar('\n');
         return (0);
 }
-
