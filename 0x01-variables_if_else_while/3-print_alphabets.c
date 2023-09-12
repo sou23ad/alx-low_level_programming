@@ -5,17 +5,18 @@
  *
  * Return: Always 0 (success)
  */
+#include <stdio.h>
 
 int main(void)
 {
-        char lowerCase, upperCase;
+        int i;
 
-        for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++) {
-                putchar(lowerCase);
+        for (i = 'a'; i <= 'z'; i++) {
+                putchar(i);
         }
 
-        for (upperCase = 'A'; upperCase <= 'Z'; upperCase++) {
-                putchar(upperCase);
+        for (i = 'A'; i <= 'Z'; i++) {
+                putchar(i);
         }
 
         putchar('\n');
