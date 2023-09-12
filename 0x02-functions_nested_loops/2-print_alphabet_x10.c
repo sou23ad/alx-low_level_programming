@@ -1,20 +1,22 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * print_alphabet_x10 - Print lowercase alphabet 10 times
+ * print_alphabet_x10 - print 10 times the alphabet
+ *
+ * Return: void
  */
-
 void print_alphabet_x10(void)
 {
-	char num, letter;
+  char c;
+  int i;
 
-	for (num = 0; num <= '9'; letter++)
-	{
-		for (letter = 'a'; letter <= 'z'; letter++)
-		{
-			_putchar(letter);
-		}
-		_putchar('\n');
-	}
+  for (i = 0; i < 10; i++) {
+    for (c = 'a'; c <= 'z'; c++) {
+      _putchar(c);
+    }
+    _putchar('\n');
+  }
 }
+
 
